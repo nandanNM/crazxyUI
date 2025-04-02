@@ -1,12 +1,3 @@
-import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-
-// const icons = [
-//   { id: 1, name: FaGithub },
-//   { id: 2, name: FaInstagram },
-//   { id: 3, name: FaLinkedin },
-//   { id: 4, name: FaXTwitter },
-// ];
-
 const WaitList = () => {
   return (
     <div className="relative h-screen">
