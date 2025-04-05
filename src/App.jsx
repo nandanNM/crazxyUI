@@ -3,6 +3,7 @@ import "./globals.css";
 import { WaitList } from "./_root/pages/index";
 import RootLayout from "./_root/RootLayout";
 import ComponentLayout from "./_root/ComponentLayout";
+
 function App() {
   return (
     <main className="">
