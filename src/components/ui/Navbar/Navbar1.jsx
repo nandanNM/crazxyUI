@@ -9,11 +9,12 @@ const Navbar1 = () => {
     { id: 1, name: "Home" },
     { id: 2, name: "About" },
     { id: 3, name: "Contact" },
+    { id: 4, name: "Orders" },
   ];
 
   return (
     <nav className="w-full flex justify-center px-2 mx-auto lg:border-b sticky z-50 bg-white shadow-sm">
-      <div className="max-w-7xl w-full py-5 flex items-center justify-between md:justify-normal">
+      <div className="max-w-7xl w-full py-3 flex items-center justify-between md:justify-normal">
         {/* Logo */}
         <div className="md:w-1/3 flex gap-2 items-center">
           <svg
@@ -37,7 +38,7 @@ const Navbar1 = () => {
 
         {/* Desktop View */}
         <div className="md:w-2/3 hidden lg:flex items-center justify-between">
-          <ul className="flex gap-5 lg:gap-15 text-[17px] font-light">
+          <ul className="flex gap-4 lg:gap-10 text-sm">
             {links1.map(link => (
               <li
                 key={link.id}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
-const Navbar = () => {
+const Navbar3 = () => {
   const [open, setOpen] = useState(false);
 
   const navLinks = [
@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full bg-black text-white sticky top-0 z-50 border-b border-white/10">
+    <nav className="w-full sticky top-0 z-50 border-b border-white/10 shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between relative">
         {/* Logo */}
         <div className="text-white text-2xl font-bold tracking-wide">
@@ -45,11 +45,11 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex gap-8 text-sm font-light">
+        <ul className="hidden md:flex gap-8 text-sm font-semibold">
           {navLinks.map(link => (
             <li
               key={link.id}
-              className="cursor-pointer hover:text-gray-300 transition"
+              className="cursor-pointer hover:underline transition-all duration-300 ease-in-out"
             >
               {link.name}
             </li>
@@ -58,10 +58,10 @@ const Navbar = () => {
 
         {/* Desktop View */}
         <div className="hidden md:flex gap-4">
-          <button className="border border-white text-sm px-4 py-1.5 rounded-full hover:bg-white hover:text-black transition">
+          <button className="border border-black text-sm px-4 py-1.5 rounded-full hover:bg-gray-200 hover:text-black transition cursor-pointer">
             Login
           </button>
-          <button className="bg-white text-black text-sm px-4 py-1.5 rounded-full hover:bg-gray-200 transition">
+          <button className="bg-black text-white text-sm px-4 py-1.5 rounded-full hover:bg-gray-800 transition cursor-pointer">
             Get Started
           </button>
         </div>
@@ -103,4 +103,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar3;
