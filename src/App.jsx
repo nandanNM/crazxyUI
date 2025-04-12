@@ -3,7 +3,7 @@ import "./globals.css";
 import { WaitList } from "./_root/pages/index";
 import RootLayout from "./_root/RootLayout";
 import ComponentLayout from "./_root/ComponentLayout";
-import CustomDatePicker from "./components/ui/DatePicker/DatePicker";
+import Badge from "./components/ui/Badge/Badge";
 
 function App() {
   return (
@@ -12,7 +12,6 @@ function App() {
         <Route element={<RootLayout />}>
           <Route path="/" element={<WaitList />} />
           <Route path="/components/" element={<ComponentLayout />}></Route>
-          <Route path="/datepicker" element={<CustomDatePicker />} />
         </Route>
       </Routes>
     </main>
